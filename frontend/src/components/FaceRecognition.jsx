@@ -6,7 +6,7 @@ const FaceRecognition = () => {
 
     const handleRecognition = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/recognize');
+            const response = await axios.post('https://facerecognition-vzuf.onrender.com/recognize');
             setResult(response.data.result);
         } catch (error) {
             console.error(error);
